@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Papagaio · Restaurant, bar & brasserie à Guignes (77)</title>
+<meta name="description" content="Le Papagaio, restaurant traditionnel français à Guignes : cuisine faite maison, planches à partager, cocktails et vins de vignerons. 10 rue de Servolles, 77390 Guignes. Réservation au 01 64 06 19 86.">
+<meta name="theme-color" content="#F4EBDB">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Le Papagaio · Restaurant à Guignes">
+<meta property="og:description" content="Cuisine française faite maison, planches, cocktails et vins de vignerons, rue de Servolles à Guignes.">
+<meta property="og:image" content="img/share.jpg">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,50;1,9..144,400..600,50&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Le Papagaio","servesCuisine":"Française","telephone":"+33164061986","address":{"@type":"PostalAddress","streetAddress":"10 rue de Servolles","postalCode":"77390","addressLocality":"Guignes","addressCountry":"FR"},
+"openingHoursSpecification":[
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"14:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Thursday"],"opens":"18:00","closes":"21:00"},
+{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"18:00","closes":"22:00"}]}
+</script>
+<style>
+:root{
+  --paper:#F4EBDB; --paper-2:#EBDFC9; --card:#FAF5EC;
+  --ink:#1F1A15; --muted:#695D50; --line:rgba(31,26,21,.16);
+  --accent:#B4481F; --accent-ink:#fff; --teal:#3F6774; --gold:#D98A2B;
+  --band:#18242A; --band-2:#22323A; --band-ink:#F4EBDB; --band-muted:#B9B2A6;
+  --display:"Fraunces", Georgia, "Times New Roman", serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1240px; --gut:clamp(20px,4vw,48px);
+  --ease:cubic-bezier(.2,.7,.1,1); --ease-out:cubic-bezier(.16,1,.3,1);
+  --nav-h:76px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;letter-spacing:-.015em;line-height:1.05;margin:0;font-variation-settings:"SOFT" 50}
+p{margin:0}
+.wrap{width:100%;max-width:calc(var(--wrap) + 2*var(--gut));margin:0 auto;padding:0 var(--gut)}
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:2px;text-decoration:none;font-weight:600}
+.skip:focus{top:12px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- labels & buttons ---------- */
+.kicker{font:600 13px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:inline-flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:28px;height:1.5px;background:currentColor}
+.lead{font-size:clamp(17px,1.35vw,19px);color:var(--muted);max-width:56ch}
+.btn{--bg:var(--accent);--fg:var(--accent-ink);display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;background:var(--bg);color:var(--fg);border:1.5px solid var(--bg);border-radius:2px;font:600 16px/1 var(--body);text-decoration:none;cursor:pointer;transition:transform .25s var(--ease),background .25s,color .25s,box-shadow .25s}
+.btn svg{width:18px;height:18px;transition:transform .3s var(--ease)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(31,26,21,.5)}
+.btn:hover svg{transform:translateX(3px)}
+.btn:active{transform:translateY(0) scale(.98);box-shadow:none}
+.btn.ghost{--bg:transparent;--fg:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{--bg:var(--ink);--fg:var(--paper)}
+.on-band .btn.ghost{--fg:var(--band-ink);border-color:var(--band-ink)}
+.on-band .btn.ghost:hover{--bg:var(--band-ink);--fg:var(--band)}
+.link{position:relative;text-decoration:none;font-weight:600;background:linear-gradient(currentColor,currentColor) 0 100%/0 1.5px no-repeat;transition:background-size .35s var(--ease);padding-bottom:2px}
+.link:hover{background-size:100% 1.5px}
+
+/* ---------- photo frames ---------- */
+.frame{position:relative;overflow:hidden;background:var(--paper-2)}
+.frame img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.frame:hover img{transform:scale(1.03)}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:100;height:var(--nav-h);background:var(--paper);transition:box-shadow .3s,height .3s}
+.nav.scrolled{box-shadow:0 1px 0 var(--line)}
+.nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:46px;height:46px;border-radius:50%;box-shadow:0 0 0 1.5px var(--ink);transition:transform .5s var(--ease)}
+.brand:hover img{transform:rotate(-8deg) scale(1.05)}
+.brand span{font:600 24px/1 var(--display);letter-spacing:-.01em}
+.brand small{display:block;font:600 10.5px/1 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.nav-links{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}
+.nav-links a:not(.btn){font-weight:600;font-size:15px;text-decoration:none;padding:12px 0;background:linear-gradient(var(--accent),var(--accent)) 0 calc(100% - 6px)/0 2px no-repeat;transition:background-size .35s var(--ease),color .2s}
+.nav-links a:not(.btn):hover,.nav-links a.active{background-size:100% 2px}
+.nav-links .btn{min-height:44px;padding:0 20px;font-size:15px}
+.burger{display:none;width:48px;height:48px;border:0;background:transparent;cursor:pointer;position:relative;color:var(--ink)}
+.burger span{position:absolute;left:12px;right:12px;height:2px;background:currentColor;transition:transform .35s var(--ease),opacity .2s}
+.burger span:nth-child(1){top:17px}.burger span:nth-child(2){top:23px}.burger span:nth-child(3){top:29px}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;padding:calc(var(--nav-h) + 28px) 0 40px;display:flex;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:0 var(--gut);align-items:center}
+.hero-copy{grid-column:1 / span 6;padding-right:clamp(0px,2vw,24px)}
+.hero h1{font-size:clamp(44px,5.4vw,82px);font-weight:500;margin:22px 0 26px;line-height:1}
+.hero h1 em{font-style:italic;color:var(--accent);font-weight:400}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .line>span{display:block}
+.hero .lead{margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.status{margin-top:34px;display:flex;align-items:center;gap:12px;font-size:15px;color:var(--muted);border-top:1px solid var(--line);padding-top:20px;max-width:520px}
+.status b{color:var(--ink);font-weight:600}
+.dot{width:10px;height:10px;border-radius:50%;background:#9a8f80;flex:none}
+.dot.open{background:#3b8a4f;box-shadow:0 0 0 0 rgba(59,138,79,.5);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(59,138,79,0)}100%{box-shadow:0 0 0 0 rgba(59,138,79,0)}}
+.hero-media{grid-column:7 / span 6;position:relative}
+.hero-media .frame{aspect-ratio:1/1.02;height:auto;max-height:calc(100svh - var(--nav-h) - 90px);width:100%}
+.hero-badge{position:absolute;left:-46px;bottom:38px;width:120px;height:120px;border-radius:50%;box-shadow:0 0 0 6px var(--paper),0 18px 40px -16px rgba(0,0,0,.45)}
+
+/* entrance */
+[data-enter] .line>span{transform:translateY(105%)}
+[data-enter] .fade{opacity:0;transform:translateY(16px)}
+[data-enter] .hero-media .frame{clip-path:inset(0 0 100% 0)}
+[data-enter] .hero-media .frame img{transform:scale(1.14)}
+[data-enter] .hero-badge{opacity:0;transform:scale(.6) rotate(-30deg)}
+.entered .line>span{transform:none;transition:transform 1.1s var(--ease-out)}
+.entered .line:nth-child(2)>span{transition-delay:.08s}
+.entered .line:nth-child(3)>span{transition-delay:.16s}
+.entered .fade{opacity:1;transform:none;transition:opacity .9s var(--ease-out),transform .9s var(--ease-out)}
+.entered .fade.d1{transition-delay:.35s}.entered .fade.d2{transition-delay:.48s}.entered .fade.d3{transition-delay:.6s}
+.entered .hero-media .frame{clip-path:inset(0 0 0 0);transition:clip-path 1.3s var(--ease-out) .1s}
+.entered .hero-media .frame img{transform:none;transition:transform 1.8s var(--ease-out) .1s}
+.entered .hero-media .frame:hover img{transform:scale(1.03);transition:transform .9s var(--ease)}
+.entered .hero-badge{opacity:1;transform:none;transition:opacity .6s .9s,transform 1s var(--ease-out) .9s}
+
+/* ---------- statement (word highlight) ---------- */
+.statement{min-height:100svh;display:flex;align-items:center;padding:80px 0;background:var(--paper)}
+.statement .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gut)}
+.statement .kicker{grid-column:1 / span 3;align-self:start;margin-top:14px}
+.statement h2{grid-column:4 / span 9;font-size:clamp(32px,3.9vw,60px);line-height:1.12;font-weight:400}
+.statement h2 .w{color:rgba(31,26,21,.18);transition:color .35s}
+.statement h2 .w.on{color:var(--ink)}
+.statement h2 .w.hl.on{color:var(--accent);font-style:italic}
+
+/* ---------- section heads ---------- */
+.sec{padding:clamp(80px,9vw,120px) 0}
+.head{display:grid;grid-template-columns:repeat(12,1fr);gap:20px var(--gut);margin-bottom:clamp(44px,5vw,64px);align-items:end}
+.head .kicker{grid-column:1 / -1}
+.head h2{grid-column:1 / span 7;font-size:clamp(38px,4.6vw,68px)}
+.head .lead{grid-column:8 / span 5}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease-out),transform .9s var(--ease-out)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- menu ---------- */
+.menu{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.menu-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 var(--gut)}
+.menu-side{grid-column:1 / span 4}
+.menu-side .sticky{position:sticky;top:calc(var(--nav-h) + 24px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chips a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1.5px solid var(--line);border-radius:2px;text-decoration:none;font-weight:600;font-size:15px;transition:border-color .25s,background .25s,color .25s,transform .25s var(--ease)}
+.chips a:hover{border-color:var(--ink);transform:translateY(-2px)}
+.chips a.active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.menu-side .frame{aspect-ratio:4/5}
+.menu-note{margin-top:18px;font-size:14px;color:var(--muted)}
+.menu-lists{grid-column:5 / span 8;display:grid;grid-template-columns:1fr 1fr;gap:56px var(--gut)}
+.course{scroll-margin-top:calc(var(--nav-h) + 24px)}
+.course h3{font-size:30px;display:flex;align-items:baseline;gap:14px;padding-bottom:16px;border-bottom:1.5px solid var(--ink);margin-bottom:6px}
+.course h3 small{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.course.wide{grid-column:1 / -1}
+.course.wide ul{columns:2;column-gap:var(--gut)}
+.dish{list-style:none;padding:16px 0;border-bottom:1px solid var(--line);break-inside:avoid;transition:padding .35s var(--ease)}
+.course ul{margin:0;padding:0}
+.dish .row{display:flex;align-items:baseline;gap:10px}
+.dish .name{font:500 19px/1.3 var(--display);flex:0 1 auto}
+.dish .leader{flex:1 1 20px;min-width:20px;border-bottom:1.5px dotted rgba(31,26,21,.3);transform:translateY(-5px);transition:border-color .3s}
+.dish .price{font:600 16px/1 var(--body);white-space:nowrap;transition:color .3s}
+.dish .desc{font-size:14.5px;color:var(--muted);margin-top:5px;line-height:1.5}
+.dish:hover{padding-left:6px}
+.dish:hover .leader{border-color:var(--accent)}
+.dish:hover .price{color:var(--accent)}
+
+/* ---------- photo chapters ---------- */
+.chapters{padding-top:clamp(80px,9vw,120px);background:var(--paper)}
+.chap-stage{position:relative;height:330vh}
+.chap-sticky{position:sticky;top:var(--nav-h);height:calc(100svh - var(--nav-h));padding:0 var(--gut) var(--gut)}
+.chap-frame{position:relative;height:100%;max-width:calc(var(--wrap) + 0px);margin:0 auto;overflow:hidden;background:var(--paper-2)}
+.chap{position:absolute;inset:0;clip-path:inset(100% 0 0 0);will-change:clip-path}
+.chap:first-of-type{clip-path:inset(0 0 0 0)}
+.chap img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);will-change:transform}
+.chap-panel{position:absolute;left:clamp(16px,2.4vw,32px);bottom:clamp(16px,2.4vw,32px);width:min(440px,calc(100% - 32px));background:var(--paper);padding:28px 30px 30px;opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease-out),transform .6s var(--ease-out)}
+.chap.current .chap-panel{opacity:1;transform:none;transition-delay:.12s}
+.chap-panel .num{font:600 13px/1 var(--body);letter-spacing:.16em;color:var(--accent);margin-bottom:14px;display:block}
+.chap-panel h3{font-size:clamp(26px,2.3vw,34px);margin-bottom:12px}
+.chap-panel p{color:var(--muted);font-size:16px}
+.chap-progress{position:absolute;right:clamp(16px,2.4vw,32px);top:clamp(16px,2.4vw,32px);display:flex;gap:6px;z-index:3}
+.chap-progress i{display:block;width:34px;height:3px;background:rgba(244,235,219,.45);overflow:hidden}
+.chap-progress i b{display:block;height:100%;width:0;background:var(--paper)}
+
+/* ---------- wines (brand band) ---------- */
+.wines{background:var(--band);color:var(--band-ink)}
+.wines .kicker{color:var(--gold)}
+.wines .lead{color:var(--band-muted)}
+.wine-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 var(--gut)}
+.wine-photo{grid-column:1 / span 4}
+.wine-photo .frame{aspect-ratio:3/4;background:var(--band-2);position:sticky;top:calc(var(--nav-h) + 24px)}
+.wine-lists{grid-column:5 / span 8;display:grid;grid-template-columns:1fr 1fr;gap:52px var(--gut);align-content:start}
+.wine-lists h3{font-size:28px;padding-bottom:14px;border-bottom:1.5px solid var(--band-ink);margin-bottom:4px;display:flex;justify-content:space-between;align-items:baseline}
+.wine-lists h3 small{word-spacing:.4em;font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--band-muted)}
+.wine{list-style:none;padding:15px 0;border-bottom:1px solid rgba(244,235,219,.14);display:grid;grid-template-columns:1fr auto;gap:2px 16px;transition:padding .35s var(--ease)}
+.wine:hover{padding-left:6px}
+.wine ul{margin:0;padding:0}
+.wine .wn{font:500 19px/1.3 var(--display)}
+.wine .wd{grid-column:1;font-size:14px;color:var(--band-muted)}
+.wine .wp{grid-column:2;grid-row:1 / span 2;display:flex;gap:6px;align-self:center;white-space:nowrap}
+.wine .wp>*{width:58px;text-align:right;font-size:15px;color:var(--band-muted)}
+.wine .wp b{color:var(--band-ink);font-size:16px;font-weight:600;transition:color .3s}
+.wine:hover .wp b{color:var(--gold)}
+.wine-lists ul{margin:0;padding:0}
+.wine-lists>*{min-width:0}
+.wine-lists .cols{columns:2;column-gap:var(--gut)}
+.wine-foot{grid-column:1 / -1;font-size:14px;color:var(--band-muted);border-top:1px solid rgba(244,235,219,.14);padding-top:22px}
+
+/* ---------- maison ---------- */
+.maison .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gut);align-items:center}
+.maison-media{grid-column:1 / span 7}
+.maison-media .frame{aspect-ratio:4/3}
+.maison-media img{filter:grayscale(1) contrast(.85) brightness(1.12);opacity:.55}
+.maison-media.developed img{filter:none;opacity:1;transition:filter 1.6s ease-out,opacity 1.2s ease-out,transform .9s var(--ease)}
+.maison-copy{grid-column:8 / span 5}
+.maison-copy h2{font-size:clamp(36px,3.8vw,56px);margin:20px 0 24px}
+.maison-copy p+p{margin-top:16px}
+.maison-copy p{color:var(--muted)}
+.maison-copy .btn{margin-top:30px}
+
+/* ---------- infos ---------- */
+.infos{background:var(--paper-2);border-top:1px solid var(--line)}
+.infos .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:0 var(--gut)}
+.address{grid-column:1 / -1;font:400 clamp(46px,7.6vw,120px)/.95 var(--display);letter-spacing:-.03em;margin:22px 0 clamp(48px,6vw,80px)}
+.address span{display:block}
+.address em{font-style:italic;color:var(--accent)}
+.hours{grid-column:1 / span 6}
+.hours h3,.contact h3{font:600 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.hours table{width:100%;border-collapse:collapse;font-size:16.5px}
+.hours td{padding:13px 0;border-bottom:1px solid var(--line)}
+.hours td:first-child{font-weight:600;width:34%}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.hours tr.today td{color:var(--ink)}
+.hours tr.today td:first-child::after{content:"Aujourd'hui";margin-left:10px;font:600 11px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:4px 7px;border-radius:2px;vertical-align:2px}
+.hours tr.closed td:last-child{font-style:italic}
+.contact{grid-column:8 / span 5}
+.contact .tel{display:block;font:500 clamp(34px,3.2vw,46px)/1.1 var(--display);text-decoration:none;margin-bottom:8px;transition:color .25s}
+.contact .tel:hover{color:var(--accent)}
+.contact p{color:var(--muted);margin-bottom:26px}
+.contact .actions{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+
+/* ---------- footer ---------- */
+.footer{background:var(--band);color:var(--band-ink);padding:72px 0 calc(32px + env(safe-area-inset-bottom))}
+.footer .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:40px var(--gut)}
+.footer .brand{grid-column:1 / span 5;align-self:start}
+.footer .brand img{box-shadow:0 0 0 1.5px var(--band-ink);width:64px;height:64px}
+.footer .brand span{font-size:32px}
+.footer .brand small{color:var(--band-muted)}
+.fcol{grid-column:span 2}
+.fcol:first-of-type{grid-column:7 / span 3}
+.fcol h4{font:600 12px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--band-muted);margin:0 0 16px}
+.fcol ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.fcol a{text-decoration:none;display:inline-block;padding:6px 0}
+.fcol p{color:var(--band-muted);font-size:15px;line-height:1.7}
+.fbottom{grid-column:1 / -1;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(244,235,219,.14);padding-top:24px;font-size:13px;color:var(--band-muted)}
+
+/* ---------- mobile bar ---------- */
+.mbar{display:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .nav-links{gap:22px}
+  .hero-copy{grid-column:1 / span 7}
+  .hero-media{grid-column:8 / span 5}
+  .hero-media .frame{aspect-ratio:3/4}
+  .hero-badge{width:96px;height:96px;left:-36px}
+  .menu-side{grid-column:1 / -1;margin-bottom:44px}
+  .menu-side .sticky{position:static;display:grid;grid-template-columns:1fr 1fr;gap:var(--gut);align-items:end}
+  .menu-side .frame{aspect-ratio:16/10;grid-row:1 / span 2;grid-column:2}
+  .menu-lists{grid-column:1 / -1}
+  .wine-photo{grid-column:1 / -1;margin-bottom:44px}
+  .wine-photo .frame{position:static;aspect-ratio:16/9}
+  .wine-lists{grid-column:1 / -1}
+}
+@media (max-width:900px){
+  :root{--nav-h:68px}
+  .nav-links{position:fixed;inset:var(--nav-h) 0 0 0;background:var(--paper);flex-direction:column;align-items:stretch;gap:0;padding:24px var(--gut);transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .3s,transform .4s var(--ease),visibility 0s .4s}
+  .nav-links.open{opacity:1;transform:none;visibility:visible;transition:opacity .3s,transform .4s var(--ease)}
+  .nav-links a:not(.btn){font:500 34px/1 var(--display);padding:18px 0;border-bottom:1px solid var(--line);display:block;background:none}
+  .nav-links li:last-child{margin-top:28px}
+  .nav-links .btn{width:100%;min-height:56px;font-size:17px}
+  .burger{display:block}
+  .hero{min-height:auto;padding-top:calc(var(--nav-h) + 24px)}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-copy,.hero-media{grid-column:1 / -1}
+  .hero-copy{padding:0}
+  .hero-media{margin-top:40px}
+  .hero-media .frame{aspect-ratio:4/3;max-height:none}
+  .hero-badge{left:auto;right:18px;bottom:-30px;width:88px;height:88px}
+  .statement{min-height:auto;padding:110px 0}
+  .statement .wrap{grid-template-columns:1fr}
+  .statement .kicker,.statement h2{grid-column:1 / -1}
+  .head h2,.head .lead{grid-column:1 / -1}
+  .maison-media,.maison-copy{grid-column:1 / -1}
+  .hours,.contact{grid-column:1 / -1}
+  .contact{margin-top:56px}
+  .footer .brand,.fcol,.fcol:first-of-type{grid-column:1 / -1}
+}
+@media (max-width:700px){
+  body{font-size:16px;padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+  .hero h1{font-size:clamp(40px,11.4vw,56px)}
+  .hero-actions .btn{flex:1 1 100%}
+  .menu-side .sticky{grid-template-columns:1fr}
+  .menu-side .frame{grid-row:auto;grid-column:auto;aspect-ratio:4/3}
+  .menu-lists{grid-template-columns:1fr;gap:48px}
+  .course.wide ul{columns:1}
+  .wine-lists{grid-template-columns:1fr;gap:44px}
+  .wine-lists .cols{columns:1}
+  .wine .wp>*{width:50px}
+  .dish .name{font-size:18px}
+  .contact .actions .btn{width:100%}
+  .maison-copy .btn{width:100%}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:90;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--paper);box-shadow:0 -1px 0 var(--line)}
+  .mbar .btn{min-height:50px;padding:0 12px;font-size:15px}
+  .footer{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+}
+/* chapters: stacked fallback on phones & reduced motion */
+@media (max-width:640px){
+  .chap-stage{height:auto}
+  .chap-sticky{position:static;height:auto;padding:0 var(--gut)}
+  .chap-frame{height:auto;overflow:visible;background:none;display:grid;gap:40px}
+  .chap,.chap:first-of-type{position:relative;clip-path:none}
+  .chap img{transform:none;aspect-ratio:4/5;height:auto}
+  .chap-panel{position:relative;left:auto;bottom:auto;width:auto;opacity:1;transform:none;padding:22px 0 0;background:none}
+  .chap-progress{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  [data-enter] .line>span,[data-enter] .fade,[data-enter] .hero-badge{transform:none;opacity:1}
+  [data-enter] .hero-media .frame{clip-path:none}
+  [data-enter] .hero-media .frame img{transform:none}
+  .reveal{opacity:1;transform:none}
+  .statement h2 .w{color:var(--ink)}
+  .statement h2 .w.hl{color:var(--accent);font-style:italic}
+  .maison-media img{filter:none;opacity:1}
+  .chap-stage{height:auto}
+  .chap-sticky{position:static;height:auto}
+  .chap-frame{height:auto;overflow:visible;background:none;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gut)}
+  .chap,.chap:first-of-type{position:relative;clip-path:none}
+  .chap img{transform:none;aspect-ratio:3/4;height:auto}
+  .chap-panel{position:relative;left:auto;bottom:auto;width:auto;opacity:1;transform:none;padding:22px 0 0;background:none}
+  .chap-progress{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Le Papagaio, retour en haut de page">
+      <img src="img/emblem.webp" alt="" width="46" height="46">
+      <span><small>Restaurant · Guignes</small>Le Papagaio</span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="menu-nav">
+      <li><a href="#carte">La carte</a></li>
+      <li><a href="#a-table">À table</a></li>
+      <li><a href="#vins">Les vins</a></li>
+      <li><a href="#maison">La maison</a></li>
+      <li><a href="#infos">Infos</a></li>
+      <li><a class="btn" href="tel:+33164061986">Réserver · 01 64 06 19 86</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="hero" id="top" data-enter>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="kicker fade">Restaurant · Bar · Brasserie à Guignes</span>
+      <h1><span class="line"><span>Cuisine française</span></span><span class="line"><span><em>faite maison,</em> rue</span></span><span class="line"><span>de Servolles.</span></span></h1>
+      <p class="lead fade d1">Saumon fumé par nos soins au bois de hêtre, bœuf charolais, planches à partager et vins de vignerons. Midi et soir, du mardi au samedi.</p>
+      <div class="hero-actions fade d2">
+        <a class="btn" href="tel:+33164061986">Réserver une table
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#carte">Voir la carte</a>
+      </div>
+      <p class="status fade d3" id="status" aria-live="polite"><i class="dot" id="status-dot"></i><span id="status-text">Mardi au samedi · 10h–14h et 18h–22h</span></p>
+    </div>
+    <div class="hero-media">
+      <div class="frame"><img src="img/facade.webp" alt="La façade du Papagaio et sa terrasse sous l'auvent crème, rue de Servolles à Guignes" width="1536" height="1536" fetchpriority="high"></div>
+      <img class="hero-badge" src="img/emblem.webp" alt="" width="120" height="120">
+    </div>
+  </div>
+</section>
+
+<section class="statement" aria-labelledby="manifeste">
+  <div class="wrap">
+    <span class="kicker">Notre cuisine</span>
+    <h2 id="manifeste" data-words>Ici, tout part de la cuisine : des recettes de brasserie, des produits que l'on connaît par leur nom — le <mark>Brie de Meaux,</mark> le <mark>bœuf charolais,</mark> le <mark>miel du Rucher des Petits Bois</mark> — et le temps qu'il faut pour bien faire.</h2>
+  </div>
+</section>
+
+<section class="sec menu" id="carte" aria-labelledby="carte-titre">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">La carte</span>
+      <h2 id="carte-titre" class="reveal">La carte d'automne</h2>
+      <p class="lead reveal">Entrées, planches, plats et desserts, préparés sur place. Le burger est servi sur pain bio avec frites maison.</p>
+    </div>
+    <div class="menu-grid">
+      <aside class="menu-side">
+        <div class="sticky">
+          <nav class="chips" aria-label="Rubriques de la carte">
+            <a href="#entrees">Entrées</a><a href="#partager">À partager</a><a href="#plats">Plats</a><a href="#desserts">Desserts</a>
+          </nav>
+          <div class="frame"><img src="img/poire.webp" alt="Poire pochée au vin rouge, crème fouettée et tranche d'orange séchée dans une assiette noire" width="1024" height="1536" loading="lazy"></div>
+        </div>
+      </aside>
+      <div class="menu-lists">
+        <div class="course" id="entrees">
+          <h3>Entrées</h3>
+          <ul>
+            <li class="dish"><div class="row"><span class="name">Palet de butternut rôti, chorizo, miel et crumble</span><span class="leader"></span><span class="price">10 €</span></div></li>
+            <li class="dish"><div class="row"><span class="name">Camembert rôti au miel de forêt</span><span class="leader"></span><span class="price">11 €</span></div><p class="desc">Miel artisanal du Rucher des Petits Bois, noix et mesclun</p></li>
+            <li class="dish"><div class="row"><span class="name">Saumon fumé par nos soins au bois de hêtre</span><span class="leader"></span><span class="price">12 €</span></div></li>
+            <li class="dish"><div class="row"><span class="name">Terrine campagnarde automnale</span><span class="leader"></span><span class="price">9 €</span></div><p class="desc">Pickles de légumes</p></li>
+            <li class="dish"><div class="row"><span class="name">Cassolette d'escargots de Bourgogne et champignons</span><span class="leader"></span><span class="price">11 €</span></div><p class="desc">Jus de viande, œuf poché</p></li>
+          </ul>
+        </div>
+        <div class="course" id="partager">
+          <h3>À partager</h3>
+          <ul>
+            <li class="dish"><div class="row"><span class="name">Fuet catalan, 160 g</span><span class="leader"></span><span class="price">10 €</span></div></li>
+            <li class="dish"><div class="row"><span class="name">Planche de fromages affinés</span><span class="leader"></span><span class="price">18,50 €</span></div><p class="desc">Comté affiné, tomme de Savoie, Brie de Meaux, Sainte-Maure de Touraine</p></li>
+            <li class="dish"><div class="row"><span class="name">Planche de charcuterie ibérique</span><span class="leader"></span><span class="price">18,50 €</span></div><p class="desc">Jambon serrano, chorizo bellota, lomo, salchichón</p></li>
+            <li class="dish"><div class="row"><span class="name">Planche mixte</span><span class="leader"></span><span class="price">22 €</span></div><p class="desc">Fromages et charcuterie</p></li>
+          </ul>
+        </div>
+        <div class="course wide" id="plats">
+          <h3>Plats</h3>
+          <ul>
+            <li class="dish"><div class="row"><span class="name">Le burger du Papagaio, frites maison et salade</span><span class="leader"></span><span class="price">19,50 €</span></div><p class="desc">Pain bio, steak charolais, comté, oignons frits, tomate, mayonnaise à la moutarde de Meaux</p></li>
+            <li class="dish"><div class="row"><span class="name">Faux-filet charolais, crème au Brie de Meaux</span><span class="leader"></span><span class="price">24 €</span></div><p class="desc">Frites maison et salade</p></li>
+            <li class="dish"><div class="row"><span class="name">Suprême de poulet jaune, crème de champignons</span><span class="leader"></span><span class="price">21 €</span></div><p class="desc">Linguine</p></li>
+            <li class="dish"><div class="row"><span class="name">Filet de daurade royale à la plancha</span><span class="leader"></span><span class="price">23 €</span></div><p class="desc">Sauce vierge, garniture du moment</p></li>
+            <li class="dish"><div class="row"><span class="name">Linguine au pesto de basilic et burrata crémeuse</span><span class="leader"></span><span class="price">17 €</span></div></li>
+            <li class="dish"><div class="row"><span class="name">Échine de porc tonkatsu</span><span class="leader"></span><span class="price">22 €</span></div><p class="desc">Mayonnaise épicée et ail noir, riz thaï</p></li>
+          </ul>
+        </div>
+        <div class="course wide" id="desserts">
+          <h3>Desserts</h3>
+          <ul>
+            <li class="dish"><div class="row"><span class="name">Café gourmand « Papagaio »</span><span class="leader"></span><span class="price">9 €</span></div></li>
+            <li class="dish"><div class="row"><span class="name">Assiette de fromages affinés</span><span class="leader"></span><span class="price">8,50 €</span></div></li>
+            <li class="dish"><div class="row"><span class="name">Cheesecake citron vert et spéculoos</span><span class="leader"></span><span class="price">9 €</span></div><p class="desc">Coulis de poire</p></li>
+            <li class="dish"><div class="row"><span class="name">Brioche façon pain perdu</span><span class="leader"></span><span class="price">9,50 €</span></div><p class="desc">Caramel au beurre salé, glace vanille</p></li>
+            <li class="dish"><div class="row"><span class="name">Brownie chocolat pistache</span><span class="leader"></span><span class="price">9,50 €</span></div><p class="desc">Glace pistache</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapters" id="a-table" aria-labelledby="table-titre">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">À table</span>
+      <h2 id="table-titre" class="reveal">De la cuisine au comptoir</h2>
+      <p class="lead reveal">Une assiette du moment, une planche au milieu de la table, un cocktail pour commencer.</p>
+    </div>
+  </div>
+  <div class="chap-stage" id="chap-stage">
+    <div class="chap-sticky">
+      <div class="chap-frame">
+        <div class="chap-progress" aria-hidden="true"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+        <article class="chap current">
+          <img src="img/risotto.webp" alt="Risotto crémeux, carottes fanes rôties, betterave chioggia et copeaux de parmesan" width="1350" height="1800">
+          <div class="chap-panel"><span class="num">01 — Cuisine</span><h3>Des assiettes de saison</h3><p>Légumes du moment, cuissons justes, dressage soigné. Cet automne : butternut rôti, terrine campagnarde et escargots aux champignons.</p></div>
+        </article>
+        <article class="chap">
+          <img src="img/planches.webp" alt="Une planche de charcuterie ibérique et une planche de fromages affinés avec salade, noix et radis noir" width="1350" height="1800">
+          <div class="chap-panel"><span class="num">02 — À partager</span><h3>Des planches pour la table</h3><p>Comté, tomme, Brie de Meaux et Sainte-Maure ; serrano, chorizo bellota, lomo et salchichón. La planche mixte réunit les deux.</p></div>
+        </article>
+        <article class="chap">
+          <img src="img/cocktail-noir.webp" alt="Cocktail noir et vert au citron vert devant un shaker et la carte des vins et boissons du Papagaio" width="1350" height="1800">
+          <div class="chap-panel"><span class="num">03 — Le bar</span><h3>Le comptoir, dès l'apéritif</h3><p>Cocktails préparés au shaker, vins de vignerons au verre et champagne à la coupe, en salle ou en terrasse.</p></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wines on-band" id="vins" aria-labelledby="vins-titre">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker reveal">Les vins</span>
+      <h2 id="vins-titre" class="reveal">Nos vins de vignerons</h2>
+      <p class="lead reveal">Une sélection courte de blancs, rosés, rouges et champagnes, servis du verre de 15 cl à la bouteille.</p>
+    </div>
+    <div class="wine-grid">
+      <div class="wine-photo">
+        <div class="frame"><img src="img/cocktail-passion.webp" alt="Cocktail à la menthe et au citron vert posé au comptoir à côté de la carte Vins et boissons du Papagaio" width="1350" height="1800" ></div>
+      </div>
+      <div class="wine-lists">
+        <div>
+          <h3>Blancs <small>15 cl · 75 cl</small></h3>
+          <ul>
+            <li class="wine"><span class="wn">Touraine Sauvignon</span><span class="wd">AOP · Domaine Sauger</span><span class="wp"><span>5 €</span><b>20 €</b></span></li>
+            <li class="wine"><span class="wn">Chardonnay bio</span><span class="wd">Vin de France · Clément de la Fée</span><span class="wp"><span>6 €</span><b>26 €</b></span></li>
+            <li class="wine"><span class="wn">Viognier « Les Îles Blanches »</span><span class="wd">IGP · Cellier des Chartreux</span><span class="wp"><span>6 €</span><b>26 €</b></span></li>
+            <li class="wine"><span class="wn">Pouilly-Fumé</span><span class="wd">AOP · Éric Louis</span><span class="wp"><span>—</span><b>34 €</b></span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Rosés <small>15 cl · 75 cl</small></h3>
+          <ul>
+            <li class="wine"><span class="wn">Gris « Signature »</span><span class="wd">IGP · Maison Olivier</span><span class="wp"><span>5 €</span><b>20 €</b></span></li>
+            <li class="wine"><span class="wn">Côtes de Provence « Villa Estérelle »</span><span class="wd">AOP · Château du Rouët</span><span class="wp"><span>6 €</span><b>26 €</b></span></li>
+          </ul>
+          <h3 style="margin-top:44px">Champagnes <small>12,5 cl · 75 cl</small></h3>
+          <ul>
+            <li class="wine"><span class="wn">Charles de Bonnan Brut</span><span class="wd">AOP · Jean-Michel Moutardier</span><span class="wp"><span>12 €</span><b>55 €</b></span></li>
+            <li class="wine"><span class="wn">Blanc de Blancs Brut</span><span class="wd">AOP · Laetitia Torchet</span><span class="wp"><span>—</span><b>75 €</b></span></li>
+          </ul>
+        </div>
+        <div style="grid-column:1 / -1">
+          <h3>Rouges <small>15 cl · 75 cl</small></h3>
+          <ul class="cols">
+            <li class="wine"><span class="wn">Bordeaux bio</span><span class="wd">AOP · Château Coulonges</span><span class="wp"><span>5 €</span><b>20 €</b></span></li>
+            <li class="wine"><span class="wn">Côte de Brouilly</span><span class="wd">AOP · Lionel Marillier</span><span class="wp"><span>6 €</span><b>26 €</b></span></li>
+            <li class="wine"><span class="wn">Chinon « Île Puy Blanc »</span><span class="wd">AOP · Domaine des Géleries</span><span class="wp"><span>—</span><b>26 €</b></span></li>
+            <li class="wine"><span class="wn">Pic Saint-Loup « Galabert »</span><span class="wd">AOP · Cellier du Pic</span><span class="wp"><span>—</span><b>32 €</b></span></li>
+            <li class="wine"><span class="wn">Bourgogne Pinot Noir</span><span class="wd">AOP · Domaine Saint Martin</span><span class="wp"><span>—</span><b>38 €</b></span></li>
+            <li class="wine"><span class="wn">Crozes-Hermitage bio « Fleur de Syrah »</span><span class="wd">AOP · Domaine Michelas St Jemms</span><span class="wp"><span>—</span><b>44 €</b></span></li>
+          </ul>
+        </div>
+        <p class="wine-foot">Les vins servis au verre existent aussi en 25 cl et 50 cl. L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec maison" id="maison" aria-labelledby="maison-titre">
+  <div class="wrap">
+    <div class="maison-media" id="develop">
+      <div class="frame"><img src="img/equipe.webp" alt="L'équipe du Papagaio devant la terrasse du restaurant" width="1800" height="1350" ></div>
+    </div>
+    <div class="maison-copy">
+      <span class="kicker reveal">La maison</span>
+      <h2 id="maison-titre" class="reveal">Un restaurant de bourg, une terrasse sur la rue</h2>
+      <p class="reveal">Le Papagaio est un restaurant traditionnel français installé au cœur de Guignes. Bar, brasserie et salle de restaurant sous le même auvent, avec sa terrasse sur la rue de Servolles.</p>
+      <p class="reveal">Une cuisine préparée avec soin, des produits que l'on choisit et un accueil chaleureux : on y vient pour un déjeuner, un dîner entre amis ou un verre au comptoir.</p>
+      <a class="btn ghost reveal" href="#infos">Horaires et accès</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec infos" id="infos" aria-labelledby="infos-titre">
+  <div class="wrap">
+    <span class="kicker" style="grid-column:1 / -1">Nous trouver</span>
+    <h2 class="address" id="infos-titre"><span>10 rue de Servolles,</span><span><em>77390 Guignes</em></span></h2>
+    <div class="hours">
+      <h3>Horaires</h3>
+      <table id="hours">
+        <tbody>
+          <tr data-d="1" class="closed"><td>Lundi</td><td>Fermé</td></tr>
+          <tr data-d="2"><td>Mardi</td><td>10h – 14h · 18h – 21h</td></tr>
+          <tr data-d="3"><td>Mercredi</td><td>10h – 14h · fermé le soir</td></tr>
+          <tr data-d="4"><td>Jeudi</td><td>10h – 14h · 18h – 21h</td></tr>
+          <tr data-d="5"><td>Vendredi</td><td>10h – 14h · 18h – 22h</td></tr>
+          <tr data-d="6"><td>Samedi</td><td>10h – 14h · 18h – 22h</td></tr>
+          <tr data-d="0" class="closed"><td>Dimanche</td><td>Fermé</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="contact">
+      <h3>Réservations</h3>
+      <a class="tel" href="tel:+33164061986">01 64 06 19 86</a>
+      <p>Appelez-nous pour réserver une table, le midi comme le soir.</p>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=10+rue+de+Servolles+77390+Guignes" target="_blank" rel="noopener">Obtenir l'itinéraire
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="link" href="https://www.google.com/maps?q=10+rue+de+Servolles,+77390+Guignes" target="_blank" rel="noopener">Voir sur Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer on-band">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Le Papagaio, retour en haut de page">
+      <img src="img/emblem.webp" alt="" width="64" height="64" loading="lazy">
+      <span><small>Restaurant · Bar · Brasserie</small>Le Papagaio</span>
+    </a>
+    <div class="fcol">
+      <h4>Adresse</h4>
+      <p>10 rue de Servolles<br>77390 Guignes<br>01 64 06 19 86</p>
+    </div>
+    <div class="fcol">
+      <h4>Le site</h4>
+      <ul><li><a class="link" href="#carte">La carte</a></li><li><a class="link" href="#vins">Les vins</a></li><li><a class="link" href="#maison">La maison</a></li><li><a class="link" href="#infos">Horaires</a></li></ul>
+    </div>
+    <div class="fcol">
+      <h4>Horaires</h4>
+      <p>Mar – sam : 10h – 14h<br>Soir : mar, jeu 18h – 21h<br>ven, sam 18h – 22h</p>
+    </div>
+    <div class="fbottom">
+      <span>© 2026 Le Papagaio · Guignes, Seine-et-Marne</span>
+      <span>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Actions rapides">
+  <a class="btn" href="tel:+33164061986">Appeler</a>
+  <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=10+rue+de+Servolles+77390+Guignes" target="_blank" rel="noopener">Itinéraire</a>
+</div>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+  /* hero entrance */
+  const hero = $('[data-enter]');
+  requestAnimationFrame(() => requestAnimationFrame(() => hero.classList.add('entered')));
+
+  /* nav: shadow + mobile menu + active link */
+  const nav = $('#nav'), burger = $('#burger'), links = $('#menu-nav');
+  const onScrollNav = () => nav.classList.toggle('scrolled', scrollY > 8);
+  addEventListener('scroll', onScrollNav, { passive: true }); onScrollNav();
+  const closeMenu = () => { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.setAttribute('aria-label', 'Ouvrir le menu'); document.body.style.overflow = ''; };
+  burger.addEventListener('click', () => {
+    const open = !links.classList.contains('open');
+    links.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  $$('#menu-nav a').forEach(a => a.addEventListener('click', closeMenu));
+  addEventListener('keydown', e => { if (e.key === 'Escape' && links.classList.contains('open')) { closeMenu(); burger.focus(); } });
+
+  const sections = ['carte', 'a-table', 'vins', 'maison', 'infos'].map(id => document.getElementById(id));
+  const navLinks = $$('#menu-nav a[href^="#"]');
+  const spy = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+  }), { rootMargin: '-45% 0px -50% 0px' });
+  sections.forEach(s => spy.observe(s));
+
+  /* menu chips follow the course in view */
+  const chips = $$('.chips a');
+  const cspy = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) chips.forEach(c => c.classList.toggle('active', c.getAttribute('href') === '#' + e.target.id));
+  }), { rootMargin: '-40% 0px -55% 0px' });
+  $$('.course').forEach(c => cspy.observe(c));
+
+  /* opening status (Europe/Paris) */
+  const H = { 0: [], 1: [], 2: [[10, 14], [18, 21]], 3: [[10, 14]], 4: [[10, 14], [18, 21]], 5: [[10, 14], [18, 22]], 6: [[10, 14], [18, 22]] };
+  const days = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+  try {
+    const parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Paris', weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(new Date());
+    const wd = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(parts.find(p => p.type === 'weekday').value);
+    const t = +parts.find(p => p.type === 'hour').value + parts.find(p => p.type === 'minute').value / 60;
+    const row = $(`#hours tr[data-d="${wd}"]`); if (row) row.classList.add('today');
+    const now = H[wd].find(([a, b]) => t >= a && t < b);
+    const txt = $('#status-text'), dot = $('#status-dot');
+    const fmt = h => h + 'h';
+    if (now) { dot.classList.add('open'); txt.innerHTML = `<b>Ouvert maintenant</b> · jusqu'à ${fmt(now[1])}`; }
+    else {
+      const later = H[wd].find(([a]) => t < a);
+      if (later) txt.innerHTML = `<b>Fermé pour le moment</b> · réouverture aujourd'hui à ${fmt(later[0])}`;
+      else { let d = wd, n = 0; do { d = (d + 1) % 7; n++; } while (!H[d].length && n < 7);
+        txt.innerHTML = `<b>Fermé pour le moment</b> · réouverture ${n === 1 ? 'demain' : days[d]} à ${fmt(H[d][0][0])}`; }
+    }
+  } catch (e) {}
+
+  /* heading reveals (once) */
+  const rv = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rv.unobserve(e.target); } }), { rootMargin: '0px 0px -12% 0px' });
+  $$('.reveal').forEach((el, i) => { el.style.transitionDelay = (el.parentElement.classList.contains('head') ? [...el.parentElement.children].indexOf(el) * 90 : 0) + 'ms'; rv.observe(el); });
+
+  /* picture develops (once) */
+  const dev = $('#develop');
+  new IntersectionObserver((es, o) => es.forEach(e => { if (e.isIntersecting) { dev.classList.add('developed'); o.disconnect(); } }), { threshold: .45 }).observe(dev);
+
+  /* word highlight */
+  const st = $('[data-words]');
+  const wrapWords = (node, hl) => {
+    [...node.childNodes].forEach(n => {
+      if (n.nodeType === 3) {
+        const frag = document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(tok => {
+          if (!tok) return;
+          if (/^\s+$/.test(tok)) frag.appendChild(document.createTextNode(tok));
+          else { const s = document.createElement('span'); s.className = 'w' + (hl ? ' hl' : ''); s.textContent = tok; frag.appendChild(s); }
+        });
+        n.replaceWith(frag);
+      } else if (n.nodeName === 'MARK') { const sp = document.createElement('span'); sp.innerHTML = n.innerHTML; wrapWords(sp, true); n.replaceWith(...sp.childNodes); }
+    });
+  };
+  wrapWords(st, false);
+  const words = $$('.w', st);
+
+  /* chapters */
+  const stage = $('#chap-stage'), chaps = $$('.chap', stage), imgs = chaps.map(c => $('img', c)), bars = $$('.chap-progress b', stage);
+  const chapLive = () => !reduce && innerWidth > 640;
+
+  let ticking = false;
+  const frame = () => {
+    ticking = false;
+    const vh = innerHeight;
+    // words
+    if (!reduce) {
+      const r = st.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, (vh * .82 - r.top) / (r.height + vh * .35)));
+      const k = Math.round(p * words.length);
+      words.forEach((w, i) => w.classList.toggle('on', i < k));
+    }
+    // chapters
+    if (chapLive()) {
+      const r = stage.getBoundingClientRect();
+      const total = r.height - (vh - 76);
+      const p = Math.min(1, Math.max(0, -r.top / total));
+      const seg = 1 / chaps.length;
+      chaps.forEach((c, i) => {
+        if (i > 0) {
+          const local = Math.min(1, Math.max(0, (p - (i - 1) * seg - seg * .45) / (seg * .55)));
+          const e = 1 - Math.pow(1 - local, 3);
+          c.style.clipPath = `inset(${(1 - e) * 100}% 0 0 0)`;
+        }
+        const ip = Math.min(1, Math.max(0, (p - (i - 1) * seg) / (seg * 2)));
+        imgs[i].style.transform = `scale(${1.08 - ip * .08})`;
+        const fill = Math.min(1, Math.max(0, (p - i * seg) / seg));
+        bars[i].style.width = (fill * 100) + '%';
+      });
+      const cur = Math.min(chaps.length - 1, Math.floor(p / seg + .18));
+      chaps.forEach((c, i) => c.classList.toggle('current', i === cur));
+    } else {
+      chaps.forEach(c => { c.style.clipPath = ''; c.classList.add('current'); });
+      imgs.forEach(i => i.style.transform = '');
+    }
+  };
+  const req = () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } };
+  addEventListener('scroll', req, { passive: true });
+  addEventListener('resize', req);
+  frame();
+})();
+</script>
+</body>
+</html>
